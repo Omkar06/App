@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<form method="POST" enctype="multipart/form-data" action="/">
+	<input type="file" name="userfile" placeholder="Your image">
+	<input type="submit" name="">
+
+</form>
+
+{% if your_result %}
+<br>
+<img src="{{your_result['image']}}">
+<br>
+<h1>Generated caption:<i>{{your_result['caption']}}</i></h1>
+{% endif %}
+</body>
+</html>
